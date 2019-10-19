@@ -25,6 +25,11 @@ BUILD_TWRP := true
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/jasmine_sprout/device.mk)
 
+#Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lluvia/config/common.mk)
 
